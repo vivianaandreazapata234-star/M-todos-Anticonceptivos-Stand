@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métodos Anticonceptivos</title>
+
+  <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Métodos Anticonceptivos</h1>
+    <p>Conoce las opciones disponibles y elige la mejor para ti</p>
+  </header>
+
+  <!-- Sección de información -->
+  <section>
+    <h2>Métodos principales</h2>
+    <div class="metodos">
+      <div class="card">
+        <h3>De barrera</h3>
+        <ul>
+          <li>Condón masculino</li>
+          <li>Condón femenino</li>
+          <li>Diafragma</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Hormonales</h3>
+        <ul>
+          <li>Píldoras</li>
+          <li>Inyecciones</li>
+          <li>Implantes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>De larga duración</h3>
+        <ul>
+          <li>DIU de cobre</li>
+          <li>DIU hormonal</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Permanentes</h3>
+        <ul>
+          <li>Ligadura de trompas</li>
+          <li>Vasectomía</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Botón de acción -->
+    <div class="cta">
+      <button>¡Quiero asistir!</button>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Stand educativo sobre métodos anticonceptivos · 2025</p>
+  </footer>
+
+  <!-- Enlace al archivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #ff4b7d, #ff80ab);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Secciones */
+section {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #ff4b7d;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas */
+.metodos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+}
+
+.card ul li::before {
+  content: "✔️ ";
+}
+
+/* Botón */
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta button {
+  background: #ff4b7d;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta button:hover {
+  background: #e63963;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #ffe6ef;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .metodos {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const boton = document.querySelector(".cta button");
+
+  boton.addEventListener("click", () => {
+    // Mostrar mensaje
+    alert("¡Gracias por tu interés! Te esperamos en el stand 💙");
+
+    
